@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/gagandeep/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/gagandeep/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/gagandeep/.local/share/nvim/site/pack/packer/start/nvim-cmp",
