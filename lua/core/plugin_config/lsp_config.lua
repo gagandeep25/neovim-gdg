@@ -32,5 +32,6 @@ require("lspconfig").pyright.setup {
 }
 
 require("lspconfig").verible.setup {
-  cmd = {'verible-verilog-ls', '--rules_config_search'},
+  on_attach = on_attach,
+  cmd = {'verible-verilog-ls', '--rules=-no-tabs,-explicit-parameter-storage-type,'},
 }
