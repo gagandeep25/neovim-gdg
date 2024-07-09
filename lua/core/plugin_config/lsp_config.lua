@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "clangd", "pyright" }
+  ensure_installed = { "lua_ls", "clangd", "pyright", "verible" }
 })
 
 local on_attach = function (_, _)
@@ -29,4 +29,8 @@ require("lspconfig").pyright.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   filetypes = {"python"},
+}
+
+require("lspconfig").verible.setup {
+  cmd = {'verible-verilog-ls', '--rules_config_search'},
 }
