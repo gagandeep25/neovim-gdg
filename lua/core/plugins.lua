@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
   use 'rafamadriz/friendly-snippets'
   use 'christoomey/vim-tmux-navigator'
   use "windwp/nvim-autopairs"
+  use 'lervag/vimtex'
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
