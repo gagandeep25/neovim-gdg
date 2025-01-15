@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "clangd", "pyright", "verible", "texlab" }
+  ensure_installed = { "lua_ls", "clangd", "pyright", "verible", "texlab", "matlab_ls", "bashls" }
 })
 
 local on_attach = function (_, _)
@@ -37,6 +37,16 @@ require("lspconfig").verible.setup {
 }
 
 require("lspconfig").texlab.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+require("lspconfig").matlab_ls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+require("lspconfig").bashls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
