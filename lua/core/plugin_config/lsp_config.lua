@@ -15,38 +15,21 @@ end
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-require("lspconfig").lua_ls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
+local lspconfig = require("lspconfig")
 
-require("lspconfig").clangd.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
+local servers = { "lua_ls", "clangd", "pyright", "verible", "texlab", "matlab_ls", "bashls" }
 
-require("lspconfig").pyright.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  filetypes = {"python"},
-}
+for _, lsp in ipairs(servers) do
+  local config = {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  }
 
-require("lspconfig").verible.setup {
-  on_attach = on_attach,
-  cmd = {'verible-verilog-ls', '--rules=-no-tabs,-explicit-parameter-storage-type,'},
-}
+  if lsp == "pyright" then
+    config.filetypes = { "python" }
+  elseif lsp == "verible" then
+    config.cmd = { 'verible-verilog-ls', '--rules=-no-tabs,-explicit-parameter-storage-type,' }
+  end
 
-require("lspconfig").texlab.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
-require("lspconfig").matlab_ls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
-require("lspconfig").bashls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
+  lspconfig[lsp].setup(config)
+end
