@@ -33,4 +33,41 @@ require("lazy").setup({
   'christoomey/vim-tmux-navigator',
   "windwp/nvim-autopairs",
   'lervag/vimtex',
+
+  -- New Git Integrations
+  'lewis6991/gitsigns.nvim',
+  {
+    "NeogitOrg/neogit",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "sindrets/diffview.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+  },
+
+  -- Formatting and Linting
+  'stevearc/conform.nvim',
+  'mfussenegger/nvim-lint',
+
+  -- Workflow and Quality of Life
+  'folke/which-key.nvim',
+  'numToStr/Comment.nvim',
+
+  -- UI and Aesthetics
+  {
+    "folke/noice.nvim",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    }
+  },
+  'goolord/alpha-nvim',
+  'stevearc/dressing.nvim',
+
+  -- Diagnostics and Code Navigation
+  'folke/trouble.nvim',
+  'stevearc/aerial.nvim',
+
+  -- Session Management
+  'rmagatti/auto-session',
 })
