@@ -16,7 +16,7 @@ require("lazy").setup({
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
   'nvim-lualine/lualine.nvim',
-  { 'nvim-treesitter/nvim-treesitter', version = 'v0.9.3' },
+  'nvim-treesitter/nvim-treesitter',
   {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.4',

@@ -1,0 +1,39 @@
+
+==============================================================================
+nvim-treesitter:                                                            ✅
+
+Installation ~
+- ✅ OK `tree-sitter` found 0.22.6 (b40f342067a89cd6331bf4c27407588320f3c263) (parser generator, only needed for :TSInstallFromGrammar)
+- ✅ OK `node` found v25.9.0 (only needed for :TSInstallFromGrammar)
+- ✅ OK `git` executable found.
+- ✅ OK `cc` executable found. Selected from { vim.NIL, "cc", "gcc", "clang", "cl", "zig" }
+  Version: cc (GCC) 16.1.1 20260430
+- ✅ OK Neovim was compiled with tree-sitter runtime ABI version 15 (required >=13). Parsers must be compatible with runtime ABI.
+
+OS Info:
+{
+  machine = "x86_64",
+  release = "7.0.3-arch1-2",
+  sysname = "Linux",
+  version = "#1 SMP PREEMPT_DYNAMIC Fri, 01 May 2026 15:49:22 +0000"
+} ~
+
+Parser/Features         H L F I J
+  - bash                ✓ ✓ ✓ . ✓
+  - c                   ✓ ✓ ✓ ✓ ✓
+  - html                ✓ ✓ ✓ ✓ ✓
+  - lua                 ✓ ✓ ✓ ✓ ✓
+  - markdown            ✓ . ✓ ✓ ✓
+  - markdown_inline     ✓ . . . ✓
+  - python              ✓ ✓ ✓ ✓ ✓
+  - query               ✓ ✓ ✓ ✓ ✓
+  - ruby                ✓ ✓ ✓ ✓ ✓
+  - rust                ✓ ✓ ✓ ✓ ✓
+  - verilog             ✓ . ✓ . ✓
+  - vim                 ✓ ✓ ✓ . ✓
+  - vimdoc              ✓ . . . ✓
+
+  Legend: H[ighlight], L[ocals], F[olds], I[ndents], In[j]ections
+         +) multiple parsers found, only one will be used
+         x) errors found in the query, try to run :TSUpdate {lang} ~
+
