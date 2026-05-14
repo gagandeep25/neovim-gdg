@@ -30,6 +30,10 @@
 - **Find References:** `gr` (Opens in Telescope)
 - **Rename Symbol:** `<leader>rn`
 - **Code Actions:** `<leader>ca`
+- **Diagnostics:**
+  - **Inline:** Messages now appear at the end of the line (Virtual Text).
+  - **Hover:** Just pause your cursor on a line to see the error in a floating window.
+  - **Trouble Panel:** `<leader>xx` for workspace-wide errors.
 
 ## Formatting & Code Quality
 - **Formatting:** Handled automatically on save by `conform.nvim`.
