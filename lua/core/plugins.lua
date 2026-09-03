@@ -70,4 +70,10 @@ require("lazy").setup({
 
   -- Session Management
   'rmagatti/auto-session',
+
+  -- Markdown
+  {
+    'MeanderingProgrammer/render-markdown.nvim',
+    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
+  },
 })

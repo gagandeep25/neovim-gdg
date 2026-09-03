@@ -49,3 +49,8 @@
   - Toggle Block Comment: `gc` (Visual mode)
 - **Which-Key:** Just press `<Space>` and wait 1 second to see a menu of all available leader shortcuts!
 - **Sessions:** `auto-session` automatically saves and restores your workflow for each directory you visit.
+
+## Markdown
+- **Rendered view:** `render-markdown.nvim` renders headings, tables, code blocks, checkboxes, and callouts inline in the buffer automatically for `.md` files.
+- **Toggle rendering:** `<leader>md`
+- Raw text is shown while in Insert mode so editing stays clean.
